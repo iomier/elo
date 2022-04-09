@@ -1,12 +1,12 @@
 {
   "name": "elo",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preversion": "npm install",
-    "postversion": "git add package.json package-lock.json && git commit -m 'version bump to $($npm_package_version-stable)' && git push &&  git tag $npm_package_version-stable && git push origin $npm_package_version-stable"
+    "postversion": "git add package.json package-lock.json && git commit -m $npm_package_version-stable && git push &&  git tag $npm_package_version-stable && git push origin $npm_package_version-stable"
   },
   "repository": {
     "type": "git",
