@@ -1,13 +1,13 @@
 {
   "name": "elo",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preversion": "npm install",
     "postversion": "git add package.json package-lock.json && git commit -m  v$npm_package_version && git push && npm run gitTag",
-    "gitTag": "git tag $npm_package_version-webview && git push --tags",
+    "gitTag": "git tag $npm_package_version-stable && git push --tags",
     "setTag": "git tag $npm_package_version-azki && git tag $npm_package_version-bimito  && git tag $npm_package_version-webview && git push --tags",
     "hotfix": "npm version patch"
   },
